@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Artboard_3.png" />
+    <None Remove="Down.png" />
+    <None Remove="GameImage.jfif" />
+    <None Remove="Up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\mask.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Artboard_3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Down.png" />
+    <Resource Include="GameImage.jfif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Images\mask.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="mask.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
