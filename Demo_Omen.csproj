@@ -8,34 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Artboard_3.png" />
-    <None Remove="Down.png" />
-    <None Remove="GameImage.jfif" />
-    <None Remove="Up.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Images\mask.ico" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Resource Include="Artboard_3.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Down.png" />
     <Resource Include="GameImage.jfif">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Up.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Images\mask.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="mask.ico">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>
