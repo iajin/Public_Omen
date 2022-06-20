@@ -13,5 +13,13 @@ namespace Demo_Omen
     /// </summary>
     public partial class App : Application
     {
+        protected override void OnStartup(StartupEventArgs e)
+        {
+            base.OnStartup(e);
+            MainWindow Window = new MainWindow();
+            Demo_Omen.ViewModel.OmenViewModel Vm = new Demo_Omen.ViewModel.OmenViewModel();
+            Window.DataContext = Vm;
+            Window.Show();
+        }
     }
 }
